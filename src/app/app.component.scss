@@ -1,3 +1,4 @@
+
 .centered
 {
     position: fixed;
@@ -32,6 +33,7 @@
     right: 28px;
     width: 154px;
 }
+
 .open-button-skip{
     background-color: #047ebb;
     color: #fafafa;
@@ -46,11 +48,11 @@
     width: 154px;
     margin-left: 10px;
 }
+
 .open-button:hover {
   opacity: 1.0;
 }
   .chat-popup {
-/* //   / display: none; / */
   position: fixed;
   bottom: 5%;
   right: 50px;
@@ -72,11 +74,10 @@
   position: fixed;
   bottom: 5%;
   left: 50px;
-/* //   display : none; */
+//   display : none;
 }
 
 .chat-popup3 {
-  position: fixed;
   bottom: 5%;
   left: 50px;
 }
@@ -87,6 +88,7 @@
 }
 #SuggestionBoxBtn{
   display:block;
+  height:50px;
 }
 .h2{
   color:white;
@@ -95,7 +97,6 @@
 .h1{
   color:white;
 }
-
 .thankyou{
     color:white;
     text-align: center;
@@ -135,4 +136,22 @@
   
 ::-ms-input-placeholder { 
    color: white;
-}
+} 
+.btn-group button {
+    background-color: #047ebb; 
+    border: 1px solid #21a0df; 
+    color: white; 
+    padding: 20px 40px; 
+    cursor: pointer; 
+    float: left; 
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+  }
+  
+ 
