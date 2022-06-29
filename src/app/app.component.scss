@@ -1,0 +1,116 @@
+
+.centered
+{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.open-button2 {
+    background-color: #047ebb;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+    display: block;
+}
+.open-button3 {
+    background-color: #047ebb;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+}
+.open-button:hover {
+  opacity: 1.0;
+}
+  .chat-popup {
+  /* display: none; */
+  position: fixed;
+  bottom: 5%;
+  right: 50px;
+}
+.arrow {
+  border: solid white;
+  background-color: #047ebb;
+  color: #fafafa;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.chat-popup2 {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+//   display : none;
+}
+
+.chat-popup3 {
+  bottom: 5%;
+  left: 50px;
+}
+.chat-popup4 {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+}
+#SuggestionBoxBtn{
+  display:block;
+  height:50px;
+}
+.h2{
+  color:white;
+}
+
+.h1{
+  color:white;
+}
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+///////////// 
+.btn-group button {
+    background-color: #047ebb; 
+    border: 1px solid #21a0df; 
+    color: white; 
+    padding: 20px 40px; 
+    cursor: pointer; 
+    float: left; 
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+  }
+  
+  /* Clear floats (clearfix hack) */
+  
+  
