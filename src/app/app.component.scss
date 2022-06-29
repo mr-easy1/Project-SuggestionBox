@@ -1,0 +1,138 @@
+.centered
+{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.open-button2 {
+    background-color: #047ebb;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+    display: block;
+}
+.open-button3 {
+    background-color: #047ebb;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+}
+.open-button-skip{
+    background-color: #047ebb;
+    color: #fafafa;
+    font-weight: 700;
+    padding: 0.8%;
+    border-radius: 24px;
+    cursor: pointer;
+    opacity: 0.8;
+    position:grid;
+    bottom: 2%;
+    right: 28px;
+    width: 154px;
+    margin-left: 10px;
+}
+.open-button:hover {
+  opacity: 1.0;
+}
+  .chat-popup {
+/* //   / display: none; / */
+  position: fixed;
+  bottom: 5%;
+  right: 50px;
+}
+.arrow {
+  border: solid white;
+  background-color: #047ebb;
+  color: #fafafa;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+.chat-popup2 {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+/* //   display : none; */
+}
+
+.chat-popup3 {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+}
+.chat-popup4 {
+  position: fixed;
+  bottom: 5%;
+  left: 50px;
+}
+#SuggestionBoxBtn{
+  display:block;
+}
+.h2{
+  color:white;
+}
+
+.h1{
+  color:white;
+}
+
+.thankyou{
+    color:white;
+    text-align: center;
+  }
+.h1-usecase{
+    color:white;
+    margin-bottom: 0px;
+  }
+.text-line {
+    background-color: transparent;
+    color: #eeeeee;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #eeeeee 1px;
+    padding: 3px 10px;
+}
+
+.image{
+    display: block;
+    margin: 0 auto;
+}
+.para{
+    margin-top: 0px;
+    color:white;
+}
+
+::placeholder {
+    color: white;
+}
+  
+::-ms-input-placeholder { 
+   color: white;
+}
+  
+::-ms-input-placeholder { 
+   color: white;
+}
