@@ -1,7 +1,7 @@
 
 .centered
 {
-    position: fixed;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,19 +72,9 @@
 }
 .chat-popup2 {
   position: fixed;
-  bottom: 5%;
+  bottom: 2%;
   left: 50px;
 //   display : none;
-}
-
-.chat-popup3 {
-  bottom: 5%;
-  left: 50px;
-}
-.chat-popup4 {
-  position: fixed;
-  bottom: 5%;
-  left: 50px;
 }
 #SuggestionBoxBtn{
   display:block;
