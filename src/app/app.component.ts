@@ -40,17 +40,8 @@ export class AppComponent implements OnInit
         this.showcard3 = false;
         this.showcard4 = true;
         this.SuggestionBoxBtn = false;
+        
       }
-      OpenScreen4()
-      {
-        this.showcard4 = false;
-        this.showcard5 = true;
-        this.SuggestionBoxBtn = false;
-      }
-      OpenScreen5()
-      {
-        this.showcard5 = false;
-        this.showcard6 = true;
-        this.SuggestionBoxBtn = false;
-      }
+      
+      
 }
