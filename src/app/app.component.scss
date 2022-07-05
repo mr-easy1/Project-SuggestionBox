@@ -2,7 +2,7 @@
 .centered
 {
     position: fixed;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -70,24 +70,21 @@
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
 }
+
+.left {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(136deg);
+}
+
 .chat-popup2 {
   position: fixed;
   bottom: 5%;
-  left: 50px;
-//   display : none;
+//   left: 50px;
+/* //   display : none; */
 }
 
-.chat-popup3 {
-  bottom: 5%;
-  left: 50px;
-}
-.chat-popup4 {
-  position: fixed;
-  bottom: 5%;
-  left: 50px;
-}
 #SuggestionBoxBtn{
-  display:block;
+  // display:block;
   height:50px;
 }
 .h2{
