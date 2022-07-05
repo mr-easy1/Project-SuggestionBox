@@ -1,4 +1,5 @@
 import { Component, OnInit} from '@angular/core';
+import { FormBuilder,Validators} from '@angular/forms';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,7 +7,15 @@ import { Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit
 {
-  onFileSelected(event: any)
+
+  constructor(private fb: FormBuilder) { }
+  Suggestion = this.fb.group({
+    suggestiondescription: ['',],
+    suggestion: ['',Validators.required],
+    contacted: ['',Validators.required],
+  });
+
+onFileSelected(event: any)
   {
     console.log(event);
   } 
@@ -19,8 +28,6 @@ export class AppComponent implements OnInit
       showcard1 = false;
       showcard2 = false;
       showcard3 = false;
-      showcard4 = false;
-      showcard5 = false;
       showcard6 = false;
       
       OpenScreen()
@@ -34,19 +41,40 @@ export class AppComponent implements OnInit
         this.showcard2 = true;
         this.SuggestionBoxBtn = false;
       }
+      CloseScreen1()
+      {
+        this.showcard1 = true;
+        this.showcard2 = false;
+        this.SuggestionBoxBtn = false;
+      }
       OpenScreen2()
       {
         this.showcard2 = false;
         this.showcard3 = true;
         this.SuggestionBoxBtn = false;
       }
-      OpenScreen3()
+      CloseScreen2()
       {
+        this.showcard2 = true;
         this.showcard3 = false;
-        this.showcard4 = true;
         this.SuggestionBoxBtn = false;
         
       }
-      
-      
+      OpenScreen5()
+      {
+        this.showcard3 = false;
+        this.showcard6 = true;
+        this.SuggestionBoxBtn = false;
+      }
+      CloseScreen5()
+      {
+        this.showcard3 = true;
+        this.showcard6 = false;
+        this.SuggestionBoxBtn = false;
+      }
+      getsuggestion()
+      {
+        
+      }
 }
+
