@@ -14,6 +14,11 @@ export class AppComponent implements OnInit
     suggestion: ['',Validators.required],
     contacted: ['',Validators.required],
   });
+
+onFileSelected(event: any)
+  {
+    console.log(event);
+  } 
       ngOnInit() 
       {
       }
@@ -24,6 +29,7 @@ export class AppComponent implements OnInit
       showcard2 = false;
       showcard3 = false;
       showcard6 = false;
+      
       OpenScreen()
       {
         this.SuggestionBoxBtn = false;
