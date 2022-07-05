@@ -6,6 +6,10 @@ import { Component, OnInit} from '@angular/core';
 })
 export class AppComponent implements OnInit
 {
+  onFileSelected(event: any)
+  {
+    console.log(event);
+  } 
       ngOnInit() 
       {
       }
@@ -18,6 +22,7 @@ export class AppComponent implements OnInit
       showcard4 = false;
       showcard5 = false;
       showcard6 = false;
+      
       OpenScreen()
       {
         this.SuggestionBoxBtn = false;
