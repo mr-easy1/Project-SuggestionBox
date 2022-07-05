@@ -22,7 +22,6 @@
               border: 1px solid #fafafa;padding:15px;width: 418px;
               background-color: #21a0df !important;border-radius: 6px;">
                 <h4 class = "h2">Your Suggestion comes under which Department?</h4>
-
                 <div class="btn-group">
                   <button id="SuggestionBoxBtn"style="width:25%; margin-right:6px" (click)= "OpenScreen2()">Human Resources</button>
                   <button id="SuggestionBoxBtn"style="width:25%;margin-right:6px" (click)= "OpenScreen2()">Infrastructure</button>
@@ -33,6 +32,8 @@
                   <button id="SuggestionBoxBtn"style="margin-left:55px;width:25%;margin-right:6px" (click)= "OpenScreen2()">Finance</button>
                   <button id="SuggestionBoxBtn"style="width:25%;"(click) = "OpenScreen2()">Others</button>
                 </div>
+              <br><br><br><br><br><br><br><br><br>
+                <button style="float: left;background-color: #21a0df; border-width: 0px;" (click)= "CloseScreen1()"> <i class="arrow left"></i></button>
             </div>
         </div>
         <div *ngIf = "showcard3" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule4">
@@ -40,30 +41,34 @@
               style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
               border: 1px solid #fafafa;padding:15px;width: 418px;
               background-color: #21a0df !important;border-radius: 6px;">
-              <form action = "www.google.com">
+              <form [formGroup]="Suggestion" (ngSubmit)="getsuggestion()">
                 <h3 class = "h1-usecase">1. Short description of your Suggestion(50 words)</h3>
                 <p class ="para"> Take your time. We're here to listen.</p>
-                <textarea rows="4" cols="50" maxlength="300"></textarea>
+                <textarea id="suggestion-description" rows="4" cols="50" maxlength="300" formControlName="suggestiondescription"></textarea>
                 <h3 class = "h1">2. Please type your suggestions here <span style="color: red;">*</span>(eg. Transport related)</h3>
-                <input type="text" id = "suggestion1" class="text-line" size="40" maxlength="300" required/><br>
-                <h3 class = "h1">3. Do you want us to reach out to you regarding your suggestions?</h3>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html" style="color: white;">Yes,I wish to be contacted</label>
+                <input type="text" id = "suggestion" class="text-line" size="40" maxlength="300" formControlName="suggestion" required/><br>
+                <h3 class = "h1">3. Do you want us to reach out to you regarding your suggestions?<span style="color: red;">*</span></h3>
+                <input type="radio" id="contacted" name="contacted" value="contacted" formControlName="contacted">
+                <label for="contacted">Yes,I wish to be contacted</label>
                 <img src = "assets/img/person.png" height ="32" width = "32"><br>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html" style="color: white;">No,I wish to remain anonymous</label>
+                <input type="radio" id="anonymous" name="contacted" value="anonymous" formControlName="contacted">
+                <label for="contacted">No,I wish to remain anonymous</label>
                 <img src = "assets/img/ann.png" height ="25" width = "25">
-                <button type="submit" style="float: right;background-color: #21a0df; border-width: 0px;" (click)="OpenScreen3()"> <i class="arrow right"></i></button>
+                <p *ngIf = "!Suggestion.valid"><span style="color: red;">*</span>Fill all the required fields</p>
+                <p *ngIf = "Suggestion.valid"></p> 
+                <button style="float: left;background-color: #21a0df; border-width: 0px;" (click)= "CloseScreen2()"> <i class="arrow left"></i></button>
+                <button type="submit" *ngIf = "Suggestion.valid" style="float: right;background-color: #21a0df; border-width: 0px;" (click)= "OpenScreen5()"> <i class="arrow right"></i></button>
               </form>
             </div>
         </div>
-        <div *ngIf = "showcard4" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule7">
+        <div *ngIf = "showcard6" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule7">
           <div class="col-12"
               style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
               border: 1px solid #fafafa;padding:15px;width: 418px;
               background-color: #21a0df !important;border-radius: 6px;">
               <img src="assets/thankyouicon-white.svg" class="image" width="100" height="100" >
                 <h3 class = "thankyou">Thank you for your response...We will look into it!</h3>
+                <button style="float: left;background-color: #21a0df; border-width: 0px;" (click)= "CloseScreen5()"> <i class="arrow left"></i></button>
             </div>
         </div>
       </div>
