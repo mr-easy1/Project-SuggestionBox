@@ -52,6 +52,7 @@ export class AppComponent implements OnInit
         this.showcard2 = true;
         this.showcard3 = false;
         this.SuggestionBoxBtn = false;
+        
       }
       OpenScreen5()
       {
@@ -70,3 +71,4 @@ export class AppComponent implements OnInit
         
       }
 }
+
