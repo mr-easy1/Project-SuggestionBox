@@ -46,21 +46,8 @@
                 <p class ="para"> Take your time. We're here to listen.</p>
                 <textarea id="suggestion-description" rows="4" cols="50" maxlength="300" formControlName="suggestiondescription"></textarea>
                 <h3 class = "h1">2. Please type your suggestions here <span style="color: red;">*</span>(eg. Transport related)</h3>
-
-                <input type="text" id = "suggestion1" class="text-line" size="40" maxlength="300" required/><br><br>
-                <h3 class = "h1">3. Do you want us to reach out to you regarding your suggestions?</h3>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html" style="color: white;">Yes,I wish to be contacted</label>
-                <img src = "assets/img/person.png" height ="32" width = "32"><br>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html" style="color: white;">No,I wish to remain anonymous</label>
-                <img src = "assets/img/ann.png" height ="25" width = "25"><br><br><br>
-                <!-- <input type="file" style="display: none;"><button (change)= "onFileSelected($event)"><img ng-src="assets/img/ann.png"/></button> -->
-                <!-- <br><br><br> -->
+                <input type="text" id = "suggestion" class="text-line" size="40" maxlength="300" formControlName="suggestion" required/><br><br>
                 <input type = "file" accept=".jpg,.jpeg,.png"  (change)= "onFileSelected($event)">
-                <button type="submit" style="float: right;background-color: #21a0df; border-width: 0px;" (click)="OpenScreen3()"> <i class="arrow right"></i></button>
-
-                <input type="text" id = "suggestion" class="text-line" size="40" maxlength="300" formControlName="suggestion" required/><br>
                 <h3 class = "h1">3. Do you want us to reach out to you regarding your suggestions?<span style="color: red;">*</span></h3>
                 <input type="radio" id="contacted" name="contacted" value="contacted" formControlName="contacted">
                 <label for="contacted">Yes,I wish to be contacted</label>
@@ -70,7 +57,7 @@
                 <img src = "assets/img/ann.png" height ="25" width = "25">
                 <p *ngIf = "!Suggestion.valid"><span style="color: red;">*</span>Fill all the required fields</p>
                 <p *ngIf = "Suggestion.valid"></p> 
-                 <input type = "file" accept=".jpg,.jpeg,.png"  (change)= "onFileSelected($event)">
+                 
                 <button style="float: left;background-color: #21a0df; border-width: 0px;" (click)= "CloseScreen2()"> <i class="arrow left"></i></button>
                 <button type="submit" *ngIf = "Suggestion.valid" style="float: right;background-color: #21a0df; border-width: 0px;" (click)= "OpenScreen5()"> <i class="arrow right"></i></button>
 
