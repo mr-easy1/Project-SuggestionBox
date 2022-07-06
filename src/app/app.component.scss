@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
 }
 .open-button2 {
-    background-color: #047ebb;
+    background-color: #F16522;
     color: #fafafa;
     font-weight: 700;
     padding: 0.8%;
@@ -21,7 +21,7 @@
     display: block;
 }
 .open-button3 {
-    background-color: #047ebb;
+    background-color: #F16522;
     color: #fafafa;
     font-weight: 700;
     padding: 0.8%;
@@ -35,7 +35,7 @@
 }
 
 .open-button-skip{
-    background-color: #047ebb;
+    background-color: #F16522;
     color: #fafafa;
     font-weight: 700;
     padding: 0.8%;
@@ -59,7 +59,7 @@
 }
 .arrow {
   border: solid white;
-  background-color: #047ebb;
+  background-color: #F16522;
   color: #fafafa;
   border-width: 0 3px 3px 0;
   display: inline-block;
@@ -134,8 +134,8 @@
    color: white;
 } 
 .btn-group button {
-    background-color: #047ebb; 
-    border: 1px solid #21a0df; 
+    background-color: #F16522; 
+    border: 1px solid white; 
     color: white; 
     padding: 20px 40px; 
     cursor: pointer; 
@@ -148,6 +148,10 @@
     bottom: 2%;
     right: 28px;
     width: 154px;
+  }
+  input[name= "contacted"] {
+    accent-color: #fc7635;
+    border: #fafafa;
   }
   
  
