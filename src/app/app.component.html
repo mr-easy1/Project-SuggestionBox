@@ -7,46 +7,53 @@
         <div  *ngIf= "showcard1" id="appreciationModule2" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 2;">
           <div class="col-12"
               style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
-              border: 1px solid #fafafa;padding:15px;width: 418px;
-              background-color: #fc7635 !important;border-radius: 6px;">
-
+              border: 1px solid #fafafa;padding:15px;width: 418px; background-color: #f7b42c;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+              border-radius: 6px;">
                 <img src="assets/img/idea-48.png" style="margin-left: 180px;">
-                <h2 class = "h2">Welcome to Suggestion Box</h2>
-                <p style="color: white;">Hi Accolitian! We would love to know how can we make our workplace better. Don't worry, you can choose to be anonymous.</p>
-                <button style="float: right;background-color: #fc7635; border-width: 0px;" (click)= "OpenScreen1()"> <i class="arrow right"></i></button>
+                <h2 class = "h2" style="font-family: 'Oxygen';">Welcome to Suggestion Box</h2>
+                <p style="color: white;font-family: 'Oxygen';">Hi Accolitian! We would love to know how can we make our workplace better. Don't worry, you can choose to be anonymous.</p>
+                <button style="font-family: 'Oxygen';float: right;background-color: #f7b42c;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%); border-width: 0px;" (click)= "OpenScreen1()"> <i class="arrow right"></i></button>
             </div>
         </div>
-        <div *ngIf = "showcard2" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule3">
+        <div *ngIf = "showcard2" class = "chat-popup2" style="font-family: 'Oxygen';padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule3">
           <div class=""
-              style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
-              border: 1px solid #fafafa;padding:15px;width: 418px;
-              background-color: #fc7635 !important;border-radius: 6px;">
-                <h4 class = "h2">Your Suggestion comes under which Department?</h4>
+              style="font-family: 'Oxygen';float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
+              border: 1px solid #fafafa;padding:15px;width: 418px;background-color: #f7b42c;
+              background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);border-radius: 6px;">
+                <h4 class = "h2" style="font-family: 'Oxygen';">Your Suggestion comes under which Department?</h4>
                 <div class="btn-group">
                   
-                  <button id="SuggestionBoxBtn"style=";width:25%; margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Human Resources</button>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Infrastructure</button>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-bottom: 8px;" (click)= "OpenScreen2()">Management</button><br>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">IT Support</button>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Development</button>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-bottom: 8px;" (click)= "OpenScreen2()">Marketing</button><br>
-                  <button id="SuggestionBoxBtn"style="margin-left:55px;width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Finance</button>
-                  <button id="SuggestionBoxBtn"style="width:25%;margin-bottom: 8px;"(click) = "OpenScreen2()">Others</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%; margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Human Resources</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Infrastructure</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%;margin-bottom: 8px;" (click)= "OpenScreen2()">Management</button><br>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">IT Support</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%;margin-right:6px;margin-bottom: 8px;" (click)= "OpenScreen2()">Development</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);;width:25%;margin-bottom: 8px;" (click)= "OpenScreen2()">Marketing</button><br>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);margin-left:55px;width:25%;margin-right:6px;" (click)= "OpenScreen2()">Finance</button>
+                  <button id="SuggestionBoxBtn"style="font-family: 'Oxygen';background-color: #f5d020;
+                  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);width:25%;"(click) = "OpenScreen2()">Others</button>
                 </div>
               <br><br><br><br><br><br><br><br><br>
-                <button style="float: left;background-color: #fc7635; border-width: 0px;" (click)= "CloseScreen1()"> <i class="arrow left"></i></button>
+                <button style="font-family: 'Oxygen';float: left;background-color: #f7b42c;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%); border-width: 0px;" (click)= "CloseScreen1()"> <i class="arrow left"></i></button>
             </div>
         </div>
-        <div *ngIf = "showcard3" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule4">
+        <div *ngIf = "showcard3" class = "chat-popup2" style="font-family: 'Oxygen';padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule4">
           <div class="col-12"
-              style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
-              border: 1px solid #fafafa;padding:15px;width: 418px;
-              background-color: #fc7635 !important;border-radius: 6px;">
+              style="font-family: 'Oxygen';float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
+              border: 1px solid #fafafa;padding:15px;width: 418px;background-color: #f7b42c;
+              background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);border-radius: 6px;">
               <form [formGroup]="Suggestion" (ngSubmit)="getsuggestion()">
-                <h3 class = "h1-usecase">1. Short description of your Suggestion(50 words)</h3>
-                <p class ="para"> Take your time. We're here to listen.</p>
+                <h3 class = "h1-usecase" style="font-family: 'Oxygen';">1. Short description of your Suggestion(50 words)</h3>
+                <p class ="para" style="font-family: 'Oxygen';"> Take your time. We're here to listen.</p>
                 <textarea id="suggestion-description" rows="4" cols="50" maxlength="300" formControlName="suggestiondescription"></textarea>
-                <h3 class = "h1">2. Please type your suggestions here <span style="color: red;">*</span>(eg. Transport related)</h3>
+                <h3 class = "h1" style="font-family: 'Oxygen';">2. Please type your suggestions here <span style="color: red;">*</span>(eg. Transport related)</h3>
                 <input type="text" id = "suggestion" class="text-line" size="40" maxlength="300" formControlName="suggestion" required/><br><br>
                 <input type = "file" accept=".jpg,.jpeg,.png"  (change)= "onFileSelected($event)" style="color:#fafafa">
                 <h3 class = "h1">3. Do you want us to reach out to you regarding your suggestions?<span style="color: red;">*</span></h3>
@@ -54,25 +61,25 @@
                 <label for="contacted" style="color: white;">Yes,I wish to be contacted</label>
                 <img src = "assets/img/person.png" height ="32" width = "32"><br>
                 <input type="radio" id="anonymous" name="contacted" value="anonymous" formControlName="contacted">
-                <label for="contacted" style="color: white;" >No,I wish to remain anonymous</label>
+                <label for="contacted" style="color: white;font-family: 'Oxygen';" >No,I wish to remain anonymous</label>
                 <img src = "assets/img/ann.png" height ="25" width = "25">
-                <p *ngIf = "!Suggestion.valid" style="color: white;"><span style="color: red;">*</span>Fill all the required fields</p>
+                <p *ngIf = "!Suggestion.valid" style="font-family: 'Oxygen';color: white;"><span style="color: red;">*</span>Fill all the required fields</p>
                 <p *ngIf = "Suggestion.valid"></p> 
                  
-                <button style="float: left;background-color: #fc7635; border-width: 0px;" (click)= "CloseScreen2()"> <i class="arrow left"></i></button>
-                <button type="submit" *ngIf = "Suggestion.valid" style="float: right;background-color: #fc7635; border-width: 0px;" (click)= "OpenScreen5()"> <i class="arrow right"></i></button>
+                <button style="font-family: 'Oxygen';float: left;background-color: #f7b42c;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);border-width: 0px;" (click)= "CloseScreen2()"> <i class="arrow left"></i></button>
+                <button type="submit" *ngIf = "Suggestion.valid" style="font-family: 'Oxygen';float: right;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);border-width: 0px;" (click)= "OpenScreen5()"> <i class="arrow right"></i></button>
 
               </form>
             </div>
         </div>
-        <div *ngIf = "showcard6" class = "chat-popup2" style="padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule7">
+        <div *ngIf = "showcard6" class = "chat-popup2" style="font-family: 'Oxygen';padding-top: 0px; padding-bottom: 2%; z-index: 3;" id="appreciationModule7">
           <div class="col-12"
-              style="float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
-              border: 1px solid #fafafa;padding:15px;width: 418px;
-              background-color: #fc7635 !important;border-radius: 6px;">
+              style="font-family: 'Oxygen';float:right;height:auto;box-shadow: 0px 1px 15px 0px rgb(0 0 0 / 30%);
+              border: 1px solid #fafafa;padding:15px;width: 418px;background-color: #f7b42c;
+              background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);border-radius: 6px;">
               <img src="assets/img/thankyou.svg" class="image" width="100" height="100" >
                 <h3 class = "thankyou">Thank you for your response...We will look into it!</h3>
-                <button style="float: left;background-color: #fc7635; border-width: 0px;" (click)= "CloseScreen5()"> <i class="arrow left"></i></button>
+                <button style="float: left;background-color: #f7b42c;background: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%); border-width: 0px;" (click)= "CloseScreen5()"> <i class="arrow left"></i></button>
             </div>
         </div>
       </div>
